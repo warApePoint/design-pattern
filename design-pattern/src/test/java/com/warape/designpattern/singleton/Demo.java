@@ -4,6 +4,6 @@ package com.warape.designpattern.singleton;
 /**
  *
  */
-public class Pojo {
+public class Demo {
 
 }
