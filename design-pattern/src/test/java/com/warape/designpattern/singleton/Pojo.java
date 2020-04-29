@@ -1,9 +1,8 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
-import com.gupaoedu.vip.pattern.singleton.register.ContainerSingleton;
 
 /**
- * Created by Tom.
+ *
  */
 public class Pojo {
 

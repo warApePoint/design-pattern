@@ -1,9 +1,10 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
-import com.gupaoedu.vip.pattern.singleton.threadlocal.ThreadLocalSingleton;
+
+import com.warape.designpattern.singleton.threadlocal.ThreadLocalSingleton;
 
 /**
- * Created by Tom.
+ *
  */
 public class ThreadLocalSingletonTest {
 

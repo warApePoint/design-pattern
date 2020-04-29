@@ -1,11 +1,12 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
-import com.gupaoedu.vip.pattern.singleton.register.EnumSingleton;
+
+import com.warape.designpattern.singleton.register.EnumSingleton;
 
 import java.lang.reflect.Constructor;
 
 /**
- * Created by Tom.
+ *
  */
 public class EnumSingletonTest {
     public static void main(String[] args) {

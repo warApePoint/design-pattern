@@ -1,9 +1,9 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
 import java.util.concurrent.*;
 
 /**
- * Created by Tom.
+ *
  */
 public class ConcurrentExecutor {
     /**

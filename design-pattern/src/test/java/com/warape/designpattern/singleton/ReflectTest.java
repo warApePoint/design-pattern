@@ -1,11 +1,12 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
-import com.gupaoedu.vip.pattern.singleton.lazy.LazyStaticInnerClassSingleton;
+
+import com.warape.designpattern.singleton.lazy.LazyStaticInnerClassSingleton;
 
 import java.lang.reflect.Constructor;
 
 /**
- * Created by Tom.
+ *
  */
 public class ReflectTest {
 

@@ -1,7 +1,7 @@
-package com.gupaoedu.vip.pattern.singleton.threadlocal;
+package com.warape.designpattern.singleton.threadlocal;
 
 /**
- * Created by Tom.
+ *
  */
 public class ThreadLocalSingleton {
     private static final ThreadLocal<ThreadLocalSingleton> threadLocaLInstance =

@@ -1,9 +1,13 @@
 package com.warape.designpattern.singleton.register;
 
 /**
- * Created by Tom.
+ * @author wan
  */
+
 public enum EnumSingleton {
+    /**
+     * 实例
+     */
     INSTANCE;
 
     private Object data;

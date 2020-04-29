@@ -1,12 +1,7 @@
 package com.warape.designpattern.singleton.lazy;
 
 /**
- * Created by Tom.
- */
-
-/**
- * 优点：节省了内存,线程安全
- * 缺点：性能低
+ * @author wan
  */
 public class LazySimpleSingletion {
     private static LazySimpleSingletion instance;

@@ -1,22 +1,19 @@
 package com.warape.designpattern.singleton.hungry;
 
 /**
- * Created by Tom.
+ * @author wan
  */
 public class HungryStaticSingleton {
-    //先静态后动态
-    //先上，后下
-    //先属性后方法
-    private static final HungryStaticSingleton hungrySingleton;
 
-    //装个B
+    private static final HungryStaticSingleton HUNGRY_SINGLETON;
+
     static {
-        hungrySingleton = new HungryStaticSingleton();
+        HUNGRY_SINGLETON = new HungryStaticSingleton();
     }
 
     private HungryStaticSingleton(){}
 
     public static HungryStaticSingleton getInstance(){
-        return  hungrySingleton;
+        return  HUNGRY_SINGLETON;
     }
 }

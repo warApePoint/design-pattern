@@ -1,7 +1,7 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
 /**
- * Created by Tom.
+ *
  */
 public class LazySimpleSingletonTest {
     public static void main(String[] args) {

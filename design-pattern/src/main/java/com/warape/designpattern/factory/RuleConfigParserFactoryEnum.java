@@ -2,7 +2,7 @@ package com.warape.designpattern.factory;
 
 import lombok.NonNull;
 
-public enum RuleConfigParserEnumFactory{
+public enum RuleConfigParserFactoryEnum {
 
 
     /**
@@ -13,7 +13,7 @@ public enum RuleConfigParserEnumFactory{
     YAML("yaml", new YamlRuleConfigParserFactory()),
     PROPERTIES("properties", new PropertiesRuleConfigParserFactory());
 
-    RuleConfigParserEnumFactory(String key, IRuleConfigParserFactory ruleConfigParserFactory) {
+    RuleConfigParserFactoryEnum(String key, IRuleConfigParserFactory ruleConfigParserFactory) {
         this.key = key;
         this.ruleConfigParserFactory = ruleConfigParserFactory;
     }
@@ -32,9 +32,9 @@ public enum RuleConfigParserEnumFactory{
      */
     public static IRuleConfigParserFactory getParserFactory(@NonNull String type) {
 
-        for (RuleConfigParserEnumFactory ruleConfigParserEnumFactory : RuleConfigParserEnumFactory.values()) {
-            if(ruleConfigParserEnumFactory.key.equals(type)){
-                return ruleConfigParserEnumFactory.ruleConfigParserFactory;
+        for (RuleConfigParserFactoryEnum ruleConfigParserFactoryEnum : RuleConfigParserFactoryEnum.values()) {
+            if(ruleConfigParserFactoryEnum.key.equals(type)){
+                return ruleConfigParserFactoryEnum.ruleConfigParserFactory;
             }
         }
         return null;

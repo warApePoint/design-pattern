@@ -1,6 +1,6 @@
 package com.warape.designpattern.factory;
 
-public class XmlRuleConfigParserFactory implements IRuleConfigParserFactory {
+public class YamlRuleConfigParserFactory implements IRuleConfigParserFactory {
     @Override
     public IRuleConfigParser createParser() {
         return new JsonRuleConfigParser();

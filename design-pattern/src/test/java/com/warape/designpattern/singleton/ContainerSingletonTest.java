@@ -1,14 +1,15 @@
-package com.gupaoedu.vip.pattern.singleton.test;
+package com.warape.designpattern.singleton;
 
-import com.gupaoedu.vip.pattern.singleton.register.ContainerSingleton;
+
+import com.warape.designpattern.singleton.register.ContainerSingleton;
 
 /**
- * Created by Tom.
+ *
  */
 public class ContainerSingletonTest {
     public static void main(String[] args) {
-        Object instance1 = ContainerSingleton.getInstance("com.gupaoedu.vip.pattern.singleton.test.Pojo");
-        Object instance2 = ContainerSingleton.getInstance("com.gupaoedu.vip.pattern.singleton.test.Pojo");
+        Object instance1 = ContainerSingleton.getInstance(Pojo.class);
+        Object instance2 = ContainerSingleton.getInstance(Pojo.class);
         System.out.println(instance1 == instance2);
     }
 }

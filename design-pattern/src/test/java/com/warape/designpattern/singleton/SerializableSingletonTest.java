@@ -1,14 +1,14 @@
 package com.warape.designpattern.singleton;
 
 
-import com.warape.designpattern.singleton.seriable.SeriableSingleton;
+import com.warape.designpattern.singleton.serializable.SeriableSingleton;
 
 import java.io.*;
 
 /**
  *
  */
-public class SerializableSingletonTest   {
+public class SerializableSingletonTest {
     public static void main(String[] args) {
 
         SeriableSingleton s1;
@@ -17,13 +17,13 @@ public class SerializableSingletonTest   {
         FileOutputStream fos;
         try {
 
-            fos = new FileOutputStream("SeriableSingleton.obj");
+            fos = new FileOutputStream("SerializableSingleton.obj");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(s2);
             oos.flush();
             oos.close();
 
-            FileInputStream fis = new FileInputStream("SeriableSingleton.obj");
+            FileInputStream fis = new FileInputStream("SerializableSingleton.obj");
             ObjectInputStream ois = new ObjectInputStream(fis);
             s1 = (SeriableSingleton) ois.readObject();
             ois.close();
