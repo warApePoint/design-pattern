@@ -2,6 +2,10 @@ package com.warape.designpattern.factory;
 
 import lombok.NonNull;
 
+/**
+ * @author wan
+ */
+
 public enum RuleConfigParserFactoryEnum {
 
 
