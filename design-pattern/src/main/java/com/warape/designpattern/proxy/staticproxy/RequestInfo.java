@@ -1,4 +1,4 @@
-package com.warape.designpattern.proxy;
+package com.warape.designpattern.proxy.staticproxy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,9 +10,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class RequestInfo {
+public class RequestInfo<T> {
 
     private String name;
 
     private Long time;
+
+    private T result;
 }

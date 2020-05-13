@@ -1,4 +1,4 @@
-package com.warape.designpattern.proxy;
+package com.warape.designpattern.proxy.staticproxy;
 
 public interface IUserController {
 

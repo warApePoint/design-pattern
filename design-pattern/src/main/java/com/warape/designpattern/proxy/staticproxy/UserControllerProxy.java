@@ -1,4 +1,4 @@
-package com.warape.designpattern.proxy;
+package com.warape.designpattern.proxy.staticproxy;
 
 public class UserControllerProxy implements IUserController {
 
@@ -13,16 +13,16 @@ public class UserControllerProxy implements IUserController {
     @Override
     public UserVo login(String telephone, String password) {
         long startTime = System.currentTimeMillis();
-        UserVo login = userController.login(telephone, password);
-        metricsCollector.recordRequest(new RequestInfo("login",System.currentTimeMillis()-startTime));
-        return login;
+        UserVo userVo = userController.login(telephone, password);
+        metricsCollector.recordRequest(new RequestInfo<>("login", System.currentTimeMillis() - startTime, userVo));
+        return userVo;
     }
 
     @Override
     public UserVo register(String telephone, String password) {
         long startTime = System.currentTimeMillis();
         UserVo userVo = userController.register(telephone, password);
-        metricsCollector.recordRequest(new RequestInfo("register",System.currentTimeMillis()-startTime));
+        metricsCollector.recordRequest(new RequestInfo<>("register", System.currentTimeMillis() - startTime, userVo));
         return userVo;
     }
 }

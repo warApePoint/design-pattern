@@ -1,4 +1,4 @@
-package com.warape.designpattern.proxy;
+package com.warape.designpattern.proxy.staticproxy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
