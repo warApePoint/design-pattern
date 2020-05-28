@@ -11,6 +11,4 @@ public class Dmployee extends HumanResource {
     public double calculateSalary() {
         return salary;
     }
-
-
 }

@@ -24,6 +24,4 @@ public class Department extends HumanResource {
     public void addSubNode(HumanResource humanResource){
         subNodes.add(humanResource);
     }
-
-
 }
