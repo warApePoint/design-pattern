@@ -7,16 +7,9 @@ import java.util.concurrent.Executor;
  */
 public class AsyncEventBus extends EventBus {
 
-    private final Executor executor;
 
     public AsyncEventBus(Executor executor) {
-        this.executor = executor;
+        super(executor);
     }
 
-    @Override
-    public void post(Object o) {
-        executor.execute(() -> {
-            super.post(o);
-        });
-    }
 }
