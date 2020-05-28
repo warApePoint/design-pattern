@@ -13,14 +13,6 @@ public class EventBus {
 
     private final ObserverRegistry observerRegistry = new ObserverRegistry();
 
-    public EventBus() {
-
-        this(MoreExecutors.directExecutor());
-    }
-
-    protected EventBus(Executor executor) {
-    }
-
     public void post(Object o) {
         observerRegistry.getRegistry().get(o.getClass()).forEach(observerAction -> observerAction.execute(o));
     }

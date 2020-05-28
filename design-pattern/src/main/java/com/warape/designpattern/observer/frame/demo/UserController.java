@@ -5,8 +5,6 @@ import com.warape.designpattern.observer.frame.EventBus;
 import com.warape.designpattern.observer.p2p.v2.service.UserService;
 import com.warape.designpattern.observer.p2p.v2.service.impl.UserServiceImpl;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Executors;
 
 /**
