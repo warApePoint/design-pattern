@@ -1,5 +1,6 @@
 package com.warape.designpattern.factory;
 
+import com.warape.designpattern.factory.factorys.rule.*;
 import lombok.NonNull;
 
 /**
@@ -22,8 +23,8 @@ public enum RuleConfigParserFactoryEnum {
         this.ruleConfigParserFactory = ruleConfigParserFactory;
     }
 
-    private String key;
-    private IRuleConfigParserFactory ruleConfigParserFactory;
+    private final String key;
+    private final IRuleConfigParserFactory ruleConfigParserFactory;
 
     public String getKey() {
         return key;
